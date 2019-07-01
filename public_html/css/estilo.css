@@ -2,29 +2,33 @@ ul{
     list-style-type: none;
     margin: 0px;
     overflow: hidden;
-    background-color: #D86AAC;
-    padding-right: 70px;
-    height: 50px
+    height: 20px
 }
 
-.menu{
-    background:linear-gradient(0deg, #D86AAC, white); 
-    text-align: justify;
+.topo{
+    background-image: url(https://st2.depositphotos.com/4006379/11627/v/950/depositphotos_116279004-stock-illustration-cute-lovely-cartoon-pink-and.jpg);
+    text-align: center;
+    height: 145px
 
         
 }
+
 li{
     
     font-family: verdana;
-    margin-right: 35px;
+    margin-right: 20px;
     float: right;
     display: block
 
 }
+.linea{
+    background-color: black;
+    height: 4px;
+}
 li a{
     color: black;
     text-align: center;
-    padding: 18px 16px;
+    padding: 15px 16px;
     display: block;
     text-decoration: none;
 }
@@ -32,9 +36,18 @@ li a:hover{
     color: #66224B
 }
 
+h2{
+    background-color: #F9D4EA;
+    height: 30px;
+    text-align: center;
+    font-family: arial
+  
+}
 .buscar{
     text-align: right;
-    margin-top: 2px
+    margin-top: 0px;
+    background-color: #F9D4EA;
+    
 }
 
 
@@ -53,7 +66,7 @@ slideshow-container{
 .prev, .next{
  cursor:pointer;
  position:absolute;
- top:50%;
+ top:25%;
  width:auto;
  margin-top:-22px;
  padding:16px;
@@ -89,3 +102,43 @@ slideshow-container{
  from{opacity:.4}
  to{opacity:1}
 } 
+
+*{
+    padding:0;
+    margin:0;
+
+}
+
+video{
+    width:100%;
+    height:100%;
+    position:absolute;
+    object-fit:cover;
+    transition: all 1.2s linear;
+    z-index: -10;
+}
+
+.video1{
+    opacity:1;
+}
+.video2{
+    opacity:0;
+}
+.video3{
+    opacity:0;
+}
+
+.imagenes{
+    opacity:0;
+    transition:opacity 2s;
+    width:100%;
+    height:100%;
+    position:absolute;
+    object-fit:cover;
+    z-index: -10;
+}
+
+.container {
+    width:100%;
+    height:100%;
+}
