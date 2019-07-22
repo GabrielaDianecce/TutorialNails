@@ -19,7 +19,7 @@ ul{
 }
 #pie{
       text-align: center;
-      background-color: #F9D4EA;
+      background-color: #F0E5F6;
       height: 45px;
        font-weight: bold;
     
@@ -38,11 +38,6 @@ li{
 .linea{
     background-color: black;
     height: 3px;
-}
-.mensaje{
-     background-color: #F9D4EA;
-    height: 30px;
-     
 }
 li a{
     color: black;
@@ -67,7 +62,7 @@ h2{
 .buscar{
     text-align: right;
     margin-top: 0px;
-    background-color: #F9D4EA;
+    background-color: #F0E5F6;
     
 }
 
@@ -76,7 +71,7 @@ h2{
 
 .slideshow-container{
  position:relative;
- margin:auto;
+ margin-top: 10px;
  text-align: center;
 
 }
@@ -131,6 +126,18 @@ h2{
 
 }
 
+.container{
+    margin-top: 100px;
+   
+}
+#medio{
+    background-color: #F0E5F6;
+   height: 50px;
+    text-align: center;
+    size: 18px;
+    margin-top: 15px;
+    padding:16px;
+}
 .owl-carousel .owl-video-tn {
   background-size: cover;
   padding-bottom: 56.25%; /* 16:9 */

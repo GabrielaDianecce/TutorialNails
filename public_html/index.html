@@ -2,8 +2,10 @@
 <html>
     <head>
         <title>TutorialNails</title> 
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/estilo.css" rel="stylesheet">
-
         <meta charset="UTF-8">
     </head>    
     <body>
@@ -11,7 +13,7 @@
         <div class="topo"><img src="img/logo.png"></div>
               
                 <li><a href="#">Home</a></li>
-                <li><a href="#slideshow-container">Galeria</a></li>
+                <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#svideo">Videos</a></li>
                 <li><a href="#">Usuario</a></li>
               
@@ -20,16 +22,11 @@
             <div class="buscar">
                 <img src="img/lupa.png">
                 </div>
-            
+            <div class="linea"> </div>
     </nav> 
         
       <section id='imganes'>  
        
-        <div class="linea"> </div>
-        
-   <div class="mensaje">
-       <h2> Te dejamos algunas imagenes para inspirarte!</h2></div>
-         <div class="linea"> </div>
 <div class="slideshow-container">
     
     <div class="mySlides fade">
@@ -58,30 +55,36 @@
 </div>
     </div>
         </section>
-        <div class="container"> 
+        
+        <section id='medio'>
+            <p><span class="negrito">Ya te dejamos algunas imágenes super lindas y ahora separamos unos videos tutoriales super fáciles para inspirarte!</span></p>
+          
+            </section>
+       
+         <div class="container" style="width:600px"> 
+     <div class="owl-carousel owl-theme manual" id="videos">
+	<div class="item-video" data-merge="3">
+		<video controls preload="auto" width="100%" height="347" poster="" data-description="Lorem ipsum dolor amet">
+			<source src="videos/video1.mp4" type='video/mp4' />
+		</video>
+	</div>
+	<div class="item-video" data-merge="1">
+		<video controls preload="auto" width="100%" height="347" poster="" data-description="Lorem ipsum dolor amet">
+			<source src="videos/video2.mp4" type='video/mp4' />
+		</video>
+	</div>
+	<div class="item-video" data-merge="1">
+		<video controls preload="auto" width="100%" height="347" poster="" data-description="Lorem ipsum dolor amet">
+			<source src="videos/video3.mp4" type='video/mp4' />
+		</video>
+	</div>
+</div>
+     
 
-            <div class="row">
-
-                <div class="col-sm-12"> 
-
-                    <div class="owl-carousel owl-theme"> 
-
-                        <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
-                        <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div> 
-                        <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
-                        <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div> 
-                        <div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=g3J4VxWIM6s"></a></div>
-                        <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=0fhoIate4qI"></a></div>
-                        <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=EF_kj2ojZaE"></a></div> 
-                    </div> 
-
-                </div>
-
-            </div>
-
-        </div>
+       
+      
             <footer>
-              <div id="pie"> <p><span class="negrito">Informaciones generales</span></p> 
+              <div id="pie"> <p><span class="negrito">Seguinos en nuestras redes</span></p> 
                   <img src="img/fb.png" width="30px" height="30px">
                     <img src="img/ig.png" width="30px" height="30px">
                     <img src="img/gmail.png" width="30px" height="30px">
@@ -89,8 +92,8 @@
             </footer>
     
     
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/owl.js"></script>
     <script type="text/javascript" src="js/javascript.js"></script>      
     </body>
    </html>
