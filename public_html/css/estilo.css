@@ -20,8 +20,8 @@ ul{
 #pie{
       text-align: center;
       background-color: #F0E5F6;
-      height: 45px;
-       font-weight: bold;
+      height: 60px;
+      font-weight: bold;
     
 }
 .izq{
@@ -178,4 +178,15 @@ h2{
 
 .owl-dot.active span {
   background-color: #000;
+}
+
+.col
+{
+    float: left;
+    width: 25%;
+    margin-top: 50px;
+}
+
+.last{
+    clear: left;
 }
