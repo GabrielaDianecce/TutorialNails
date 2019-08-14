@@ -10,7 +10,7 @@ ul{
     text-align: center;
     height: 145px
 
-        
+
 }
 
 .negrito{
@@ -18,17 +18,17 @@ ul{
     font-weight: bold;
 }
 #pie{
-      text-align: center;
-      background-color: #F0E5F6;
-      height: 45px;
-       font-weight: bold;
-    
+    text-align: center;
+    background-color: #F0E5F6;
+    height: 60px;
+    font-weight: bold;
+
 }
 .izq{
     text-align: justify
 }
 li{
-    
+
     font-family: verdana;
     margin-right: 20px;
     float: right;
@@ -48,7 +48,7 @@ li a{
 }
 li a:hover{
     color: #66224B;
-    
+
 }
 
 h2{
@@ -56,68 +56,68 @@ h2{
     justify-content: center;
     font-family: arial;
     width: 100%
-   
-  
+
+
 }
 .buscar{
     text-align: right;
     margin-top: 0px;
     background-color: #F0E5F6;
-    
+
 }
 
 
 *{box-sizing:border-box}
 
 .slideshow-container{
- position:relative;
- margin-top: 10px;
- text-align: center;
+    position:relative;
+    margin-top: 10px;
+    text-align: center;
 
 }
 
 .mySlides{
- display:none;
+    display:none;
 }
 
 .prev, .next{
- cursor:pointer;
- position:absolute;
- top:25%;
- width:auto;
- margin-top:-22px;
- padding:16px;
- color:white;
- font-weight:bold;
- font-size:18px;
- transition:2s ease;
- border-radius:0 3px 3px 0;
+    cursor:pointer;
+    position:absolute;
+    top:25%;
+    width:auto;
+    margin-top:-22px;
+    padding:16px;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+    transition:2s ease;
+    border-radius:0 3px 3px 0;
 }
 
 .next{
- right:0;
- border-radius:3px 0 0 3px;
+    right:0;
+    border-radius:3px 0 0 3px;
 }
 
 .prev:hover, .next:hover{
- background-color:rgba(0,0,0,0.8);
+    background-color:rgba(0,0,0,0.8);
 }
 
 .fade{
- -webkit-animation-name:fade;
- -webkit-animation-duration:1.5s;
- animation-name:fade;
- animation-duration:1.5s;
+    -webkit-animation-name:fade;
+    -webkit-animation-duration:1.5s;
+    animation-name:fade;
+    animation-duration:1.5s;
 }
 
 @-webkit-keyframes fade{
- from{opacity:.4}
- to{opacity:1}
+    from{opacity:.4}
+    to{opacity:1}
 }
 
 @keyframes fade{
- from{opacity:.4}
- to{opacity:1}
+    from{opacity:.4}
+    to{opacity:1}
 } 
 
 *{
@@ -128,54 +128,135 @@ h2{
 
 .container{
     margin-top: 100px;
-   
+
 }
 #medio{
     background-color: #F0E5F6;
-   height: 50px;
+    height: 50px;
     text-align: center;
     size: 18px;
     margin-top: 15px;
     padding:16px;
 }
 .owl-carousel .owl-video-tn {
-  background-size: cover;
-  padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
+    background-size: cover;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
 }
 
 .owl-video-frame {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
 }
 .owl-video-frame iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .owl-dots {
-  text-align: center;
-  margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .owl-dot {
-  display: inline-block;
+    display: inline-block;
 }
 
 .owl-dot span {
-  width: 11px;
-  height: 11px;
-  background-color: #ccc;
-  border-radius: 50%;
-  display: block;
-  margin: 5px 3px;
+    width: 11px;
+    height: 11px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: block;
+    margin: 5px 3px;
 }
 
 .owl-dot.active span {
-  background-color: #000;
+    background-color: #000;
+}
+
+.col
+{
+    float: left;
+    width: 25%;
+    margin-top: 50px;
+}
+
+.last{
+    clear: left;
+}
+
+.zoom{
+    /* Aumentamos la anchura y altura durante 2 segundos */
+    transition: width 2s, height 2s, transform 2s;
+    -moz-transition: width 2s, height 2s, -moz-transform 2s;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    -o-transition: width 2s, height 2s,-o-transform 2s;
+}
+.zoom:hover{
+    /* tranformamos el elemento al pasar el mouse por encima al doble de
+       su tamaño con scale(2). */
+    transform : scale(2);
+    -moz-transform : scale(2);      /* Firefox */
+    -webkit-transform : scale(2);   /* Chrome - Safari */
+    -o-transform : scale(2);        /* Opera */
+}
+
+label{ color:grey;
+}
+input[type = "radio"]{ display:none;
+}
+.clasificacion{
+    text-align: center;
+    direction: rtl;/* right to left */
+    unicode-bidi: bidi-override;/* bidi de bidireccional */
+}
+label:hover{color:orange;
+}
+
+label:hover ~ label{color:orange;
+}
+
+input[type = "radio"]:checked ~ label{color:orange;
+}
+
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
 }
