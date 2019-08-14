@@ -10,12 +10,12 @@
     <body>
         <nav>         
             <div class="topo"><img src="img/logo.png"></div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#svideo">Videos</a></li>
-                <li><a href="#">Usuario</a></li>
-            </ul>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#svideo">Videos</a></li>
+            <li><a href="#">Usuario</a></li>
+
 
 
             <div class="linea"> </div>
@@ -24,51 +24,148 @@
             </div>
             <div class="linea"> </div>
         </nav> 
-        <table class="videos">
+        <section class="videos">
 
-            <tr>
+            <div class="row">
 
-                <td><video controls preload="auto"  data-description="Lorem ipsum dolor amet">
-                    <source src="videos/video4.mp4" type='video/mp4' /></td>
-
-                <td><video controls preload="auto" data-description="Lorem ipsum dolor amet">
-                    <source src="videos/video5.mp4" type='video/mp4' /></td>
-
-                <td><video controls preload="auto"  data-description="Lorem ipsum dolor amet">
-                    <source src="videos/video6.mp4" type='video/mp4' /></td>
-
-                <td><video controls preload="auto" data-description="Lorem ipsum dolor amet">
-                    <source src="videos/video6.mp4" type='video/mp4' /></td>
-
-            </tr>
-
-            <tr>
-
-                <td><video controls preload="auto" data-description="Lorem ipsum dolor amet">
-                    <source src="videos/video7.mp4" type='video/mp4' /></td>
-
-                <td><video controls preload="auto"  data-description="Lorem ipsum dolor amet">
-                    <source src="videos/video8.mp4" type='video/mp4' /></td>
-
-                <td><video controls preload="auto"  data-description="Lorem ipsum dolor amet">
-                    <source src="videos/video9.mp4" type='video/mp4' /></td>
-                <td><video controls preload="auto"  data-description="Lorem ipsum dolor amet">
-                    <source src="videos/video6.mp4" type='video/mp4' /></td>
-            </tr>
-
-        </table>
-
-
-
-
-
-        <footer>
-            <div id="pie"> <p><span class="negrito">Seguinos en nuestras redes</span></p> 
-                <img src="img/fb.png" width="30px" height="30px">
-                <img src="img/ig.png" width="30px" height="30px">
-                <img src="img/gmail.png" width="30px" height="30px">
+                <div class="col"> <video controls preload="auto"  data-description="Lorem ipsum dolor amet">
+                        <source src="videos/video4.mp4" type='video/mp4'/></video>
+                    <form>
+                        <p class="clasificacion">
+                            <input id="radio1" type="radio" name="estrellas" value="5">
+                            <label for="radio1">★</label>
+                            <input id="radio2" type="radio" name="estrellas" value="4"><!--
+                            --><label for="radio2">★</label><!--
+                            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                            --><label for="radio3">★</label><!--
+                            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                            --><label for="radio4">★</label><!--
+                            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                            --><label for="radio5">★</label>
+                        </p>
+                    </form>
+                </div>
+                <div class="col">   <video controls preload="auto" data-description="Lorem ipsum dolor amet">
+                        <source src="videos/video9.mp4" type='video/mp4'/></video>
+                    <form>
+                        <p class="clasificacion">
+                            <input id="radio1" type="radio" name="estrellas" value="5">
+                            <label for="radio1">★</label>
+                            <input id="radio2" type="radio" name="estrellas" value="4"><!--
+                            --><label for="radio2">★</label><!--
+                            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                            --><label for="radio3">★</label><!--
+                            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                            --><label for="radio4">★</label><!--
+                            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                            --><label for="radio5">★</label>
+                        </p>
+                    </form>
+                </div>
+                <div class="col">  <video controls preload="auto"  data-description="Lorem ipsum dolor amet">
+                        <source src="videos/video6.mp4" type='video/mp4'/></video>
+                    <form>
+                        <p class="clasificacion">
+                            <input id="radio1" type="radio" name="estrellas" value="5">
+                            <label for="radio1">★</label>
+                            <input id="radio2" type="radio" name="estrellas" value="4"><!--
+                            --><label for="radio2">★</label><!--
+                            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                            --><label for="radio3">★</label><!--
+                            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                            --><label for="radio4">★</label><!--
+                            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                            --><label for="radio5">★</label>
+                        </p>
+                    </form>
+                </div>
+                <div class="col"> <video controls preload="auto" data-description="Lorem ipsum dolor amet">
+                        <source src="videos/video6.mp4" type='video/mp4' /></video>
+                </div> 
+                <div class="last"/>
             </div>
-        </footer>
+        </div>
+        <div class="row">
 
-    </body>
+            <div class="col"> <video controls preload="auto" data-description="Lorem ipsum dolor amet">
+                    <source src="videos/video7.mp4" type='video/mp4' /></video>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4"><!--
+                        --><label for="radio2">★</label><!--
+                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                        --><label for="radio3">★</label><!--
+                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                        --><label for="radio4">★</label><!--
+                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                        --><label for="radio5">★</label>
+                    </p>
+                </form>
+            </div> 
+            <div class="col"> <video controls preload="auto"  data-description="Lorem ipsum dolor amet">
+                    <source src="videos/video8.mp4" type='video/mp4' /></video>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4"><!--
+                        --><label for="radio2">★</label><!--
+                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                        --><label for="radio3">★</label><!--
+                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                        --><label for="radio4">★</label><!--
+                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                        --><label for="radio5">★</label>
+                    </p>
+                </form>
+            </div> 
+            <div class="col">  <video controls preload="auto"  data-description="Lorem ipsum dolor amet">
+                    <source src="videos/video9.mp4" type='video/mp4' /></video>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4"><!--
+                        --><label for="radio2">★</label><!--
+                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                        --><label for="radio3">★</label><!--
+                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                        --><label for="radio4">★</label><!--
+                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                        --><label for="radio5">★</label>
+                    </p>
+                </form>
+            </div> 
+            <div class="col"> <video controls preload="auto"  data-description="Lorem ipsum dolor amet">
+                    <source src="videos/video6.mp4" type='video/mp4' /></video>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4"><!--
+                        --><label for="radio2">★</label><!--
+                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                        --><label for="radio3">★</label><!--
+                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                        --><label for="radio4">★</label><!--
+                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                        --><label for="radio5">★</label>
+                    </p>
+                </form>
+            </div> 
+            <div class="last"/>
+        </div>
+    </div>
+
+    <footer>
+        <div id="pie"> <p><span class="negrito">Seguinos en nuestras redes</span></p> 
+            <img src="img/fb.png" width="30px" height="30px">
+            <img src="img/ig.png" width="30px" height="30px">
+            <img src="img/gmail.png" width="30px" height="30px">
+        </div>
+    </footer>
+
+</body>
 </html>

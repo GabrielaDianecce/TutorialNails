@@ -251,6 +251,7 @@ label {
 .clasificacion {
   direction: rtl;
   unicode-bidi: bidi-override;
+  margin-right: 40%
 }
 
 label:hover,
@@ -261,4 +262,22 @@ label:hover ~ label {
 input[type="radio"]:checked ~ label {
   color: orange;
 }
+video {
+    width: 300px
+}
+.col
+{
+    float: left;
+    width: 25%;
+    margin-top: 50px;
+    margin-bottom: 20px;
 
+}
+
+.last{
+    clear: left;
+}
+
+row{
+    text-align: center
+}
