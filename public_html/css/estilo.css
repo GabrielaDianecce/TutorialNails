@@ -265,19 +265,4 @@ input[type="radio"]:checked ~ label {
 video {
     width: 300px
 }
-.col
-{
-    float: left;
-    width: 25%;
-    margin-top: 50px;
-    margin-bottom: 20px;
 
-}
-
-.last{
-    clear: left;
-}
-
-row{
-    text-align: center
-}
