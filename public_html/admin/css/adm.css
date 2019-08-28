@@ -44,16 +44,9 @@ nav li:hover>ul{
     margin-top: 40px;
     display: flex;
     background-color: #DFE1E3;
+    float: right;
     
-   
-}
-.col{
-    width: 100%;
-    height: 50%;
-    margin-top: 50px;
-    margin-bottom: 20px;
- 
-
+  
 }
 
 .last{
@@ -61,31 +54,36 @@ nav li:hover>ul{
 }
 
 .row{
-    display: flex
+    display: flex;
+  
 }
-
-.icon-images{
-   font-size: 150px;
-   width: 33%;
-   float: left
-   
-   
+.row-adm{
+    display: flex;
+    padding-top:150px;
+    padding-left: 70px;
     
 }
-.icon-video{
-    font-size: 150px;
-    width: 33%;
-    text-align: center;
-     
+
+.coleditar{
+    padding: 40px
 }
-.icon-bar-graph{
-    font-size: 150px;
-    width: 33%;
-    float: right;
-   
+
+.contenido{
+    margin-left: 8%
+}
+.colvideos{
+    padding: 20px;
+}
+
+.iconos{
+    font-size: 220px;
+    margin:40px;
+    color: black;
 }
 a{
-    text-decoration: none
+    text-decoration: none;
+ 
+    
 }
  .icon-images:before {
   content: "\e9bc";
@@ -114,3 +112,9 @@ input[type = "radio"]{ display:none;
     
     
 }
+
+#grafico{
+    width: 500px !important;
+    height: 400px !important;
+}
+

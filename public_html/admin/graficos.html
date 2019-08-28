@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <meta charset="UTF-8">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+        <script src="js/charts.js"></script>
     </head>    
     <body>
 
@@ -15,7 +15,7 @@
                 <li><a href="adm.html">Home</a></li>
 
             </ul></nav>
-        <canvas id="grafico"></canvas>
+        <canvas id="grafico" width="500" height="300"></canvas>
     </body>
 <script>
         var ctx = document.getElementById("grafico").getContext("2d");
@@ -27,7 +27,7 @@
                 datasets: [
                     {
                         label: "Grafico de visitas por mes",
-                        data: [258,200,289,235,155,378,365,485,215,325,321],
+                        data: [258,200,289,235,155,378,365,485,215,325,321,325],
                         backgroundColor:[
                             'rgb(92, 237, 138)',
                             'rgb(92, 237, 138)',
