@@ -16,6 +16,7 @@
 
             </ul></nav>
         <canvas id="grafico" width="500" height="300"></canvas>
+        <canvas id="grafico2" width="500" height="300"></canvas>
     </body>
 <script>
         var ctx = document.getElementById("grafico").getContext("2d");
@@ -40,12 +41,42 @@
                             'rgb(92, 237, 138)',
                             'rgb(92, 237, 138)',
                             'rgb(92, 237, 138)',
-                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)'
                         ]
                     }
                 ]
             }
-        })
+        });
+        
+         var ctx2 = document.getElementById("grafico2").getContext("2d");
+        var chart2 = new Chart2(grafico2, {
+            type: "bar",
+            data: {
+                labels: ["★", "★★", "★★★", "★★★★", "★★★★★"],
+                datasets: [
+                    {
+                        label: "Evaluaciones en nuestas imagenes",
+                        data: [258,200,289,235,155],
+                        backgroundColor:[
+                            'rgb(130, 78, 175)',
+                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)',
+                            'rgb(92, 237, 138)'
+                        ]
+                    }
+                ]
+            }
+        });
+        
+        
 
     </script>
 </html>

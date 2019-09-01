@@ -21,7 +21,9 @@ nav li{
       position:relative;
     
 }
-            
+ul{
+    background-color: black;
+}       
 nav li:hover{
       background-color:#fff;
       color:#000;
@@ -40,7 +42,7 @@ nav li:hover>ul{
 
 #home{
     width: 100%;
-    height: 500px;
+    height: 800px;
     margin-top: 40px;
     display: flex;
     background-color: #DFE1E3;
@@ -65,14 +67,19 @@ nav li:hover>ul{
 }
 
 .coleditar{
-    padding: 40px
+    padding: 40px;
+    border-color: black;
+   border-style: solid;
+   border-width: 1px
 }
 
 .contenido{
     margin-left: 8%
 }
 .colvideos{
-    padding: 20px;
+ width: 25%;
+ display: flex;
+ 
 }
 
 .iconos{
@@ -95,26 +102,112 @@ a{
   content: "\e96a";
 }
 input{
-    width: 80px;
+    width: 120px;
     height: 30px;
     padding: 5px 6px;
     margin-right: 6px;
     display: flex;
-    
+    font-size: 14px;
+    margin-top: 8px;
+  margin-left: 35px
    
    
 }
 input[type = "radio"]{ display:none;
+                    
 }
 
 .videos{
-    width: 25%;
-    
-    
+    width: 100%;   
 }
 
 #grafico{
     width: 500px !important;
     height: 400px !important;
+    padding-top: 10px;
+    padding-left: 10px
+}
+#grafico2{
+    width: 500px !important;
+    height: 400px !important;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+#imagenes{
+    background-color: #DFE1E3;
+    padding-top: 5px
+      
+}
+.fotoadm{
+    width: 300px;
+    height: 400px;
+    border-style: solid;
+    border-color: black;
+      border-width: 1px;
+     margin-top: 60px;
+     margin-left: 30px;
+    float: left
+    
+}
+.infoadm{
+    width: 60%;
+    height: 500px;
+  float: right;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 30px;
+    
+  margin-right: 60px
+     
+    
+}
+.admin{
+    width: 100%;
+    height: 600px
+}
+p{
+    color:black
 }
 
+.tb{
+   
+    width: 300px;
+    height: 300px
+}
+
+td{
+     font-size: 14px;
+    color: black;
+}
+.separar{
+    background-color: black;
+    width: 100%;
+    height: 5px
+}
+.fotousuario1{
+    width: 100px;
+    height: 90px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.usuarios{
+    width: 100%;
+    height: 300px
+}
+
+.usuario1{
+    width: 25%;
+    height: 200px;
+      border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-left: 10px
+}
