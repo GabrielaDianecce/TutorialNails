@@ -18,13 +18,16 @@
 
 
       <div class="contenido">
-        <form action="lista-video.html">
+        <form action="classesvideos/cadastrar.php" method="POST">
           <label for="fname">Titulo </label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input type="text" id="fname" name="t" placeholder="Titulo del video">
+          
+          <label for="des">Descripcion </label>
+          <input type="text" id="des" name="d" placeholder="Descripcion del video">
       
           <label for="lname">Archivo</label>
           
-          <input type="file" id="img" name="img" placeholder="Suba una imagen">
+          <input type="file" id="img" name="s" placeholder="Suba un video">
           
        <input type="submit" value="Crear">
         </form>
