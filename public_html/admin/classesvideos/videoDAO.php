@@ -17,6 +17,33 @@ class videoDAO {
             echo "Erro: ".$e;
         }
     }
+    
+        public function selectVideo() {
+        $stmt = $this->conecta->prepare("SELECT * FROM $this->videos");
+        $stmt->execute();
+
+        $lista = array();
+
+        while ($linha = $stmt->fetch()) {
+            $video = new video();
+            $video->settitulo($linha['t']);
+            $video->setsrc($linha['s']);
+            $video->setdescripcion($linha['d']);
+     
+            $lista[] = $video;
+        }
+        return $lista;
+    }
+    
+      public function eliminarVideo($video) {
+        $stmt = $this->conecta->prepare("DELETE FROM {$this->videos} "
+                . " WHERE idVideo = :idVideo");
+
+        $stmt->bindValue(':idVideo', $video->getidVideo());
+
+        return $stmt->execute();
+    }
+
 
 }
  ?>

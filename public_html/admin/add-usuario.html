@@ -18,13 +18,16 @@
 
 
       <div class="contenido">
-        <form action="lista-usuario.html">
-          <label for="fname">Login </label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Contraseña</label>
+        <form action="usuarios/cadUsuarios.php" method='POST'>
+          <label for="fname">Nombre: </label>
+          <input type="text" id="fname" name="nombre" placeholder="Your name..">
           
-          <input type="password" id="password" name="password" >
+           <label for="fname">Email: </label>
+          <input type="text" id="fname" name="email" placeholder="Your name..">
+      
+          <label for="lname">Contraseña:</label>
+          
+          <input type="password" id="password" name="contraseña" >
           
        <input type="submit"  value="Crear">
         </form>
