@@ -26,9 +26,9 @@ $retorno = $vi->selectVideo($connect);
 <body>
     <ul>
         <li><a href="adm.html">Home</a></li>
-        <li><a href="lista-imagen.html">Imagenes</a></li>
-        <li><a class="active" href="lista-video.html">Videos</a></li>
-        <li><a  href="lista-usuario.html">Usuario</a></li>        
+        <li><a href="lista-imagen.php">Imagenes</a></li>
+        <li><a class="active" href="lista-php.html">Videos</a></li>
+        <li><a  href="lista-usuario.php">Usuario</a></li>        
         <li style="float:right"><a  href="logout.html">Salir</a></li>
       </ul>
 

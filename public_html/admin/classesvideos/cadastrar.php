@@ -25,7 +25,7 @@ $v = $video->cadastrarVideo($a, $connect);
 
 //var_dump($v);
 if ($v) {
-   header('location:../lista-video.html'); 
+   header('location:../lista-video.php'); 
 } else {
     
 }

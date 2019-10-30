@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php
+include_once "../conecta.php";
+include_once 'usuarios/usuariosDAO.php';
+include_once 'usuarios/usuario.php';
+
+$PDO = new conecta();
+$connect = $PDO->conecta();
+
+$u = new usuariosDAO();
+$retorno = $u->selectUsuario($connect);
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,9 +33,9 @@
       <div class="contenido">
         <table>
             <tr>
-              <th>Login</th>
-              <th>Password</th>
-              <th>Actions</th>
+              <th>Usuario</th>
+              <th>Email</th>
+              <th>Constraseña</th>
             </tr>
             <tr>
               <td>blss</td>
@@ -41,7 +52,20 @@
               </td>
           
             </tr>
-          
+           <?php
+                
+                 foreach ($retorno as $row) {
+                    echo "<tr>";
+                    echo "<td>". $row['Nombre']. "</td>";
+                    echo "<td>". $row['Email']. "</td>";
+                    echo "<td>". $row['Contrasena']. "</td>";
+                    echo "<td><a href='edita-usuario.php?id=".$row['idUsuario']."' ><i class='material-icons'>&#xe22b;</i> </a>
+                      <a onclick='myFunction()'  ><i class='material-icons'>clear</i></a> 
+                    </td>";
+                    echo "</tr>";
+                }
+
+                ?>
           </table>
 
           <a href="add-usuario.html" class="button">Nuevo usuario</a>

@@ -19,7 +19,14 @@ $b ->setContraseña($Contraseña);
 
 $usuario = new UsuariosDAO();
 
-$usuario -> cadastrarUsuario($b, $connect);
+$x = $usuario->cadastrarUsuario($b, $connect);
 
+var_dump($x);
+    
+    if($x){
+        header('location:../lista-usuario.php'); 
+    }else{
+        
+    }
 ?>
 

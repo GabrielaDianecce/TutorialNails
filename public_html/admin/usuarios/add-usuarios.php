@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php
+include_once 'usuariosDAO.php';
+include_once 'usuario.php';
+
+$u = new usuariosDAO();
+$retorno = $u->selectUsuario();
+
+var_dump($retorno);
+        
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,9 +20,9 @@
 <body>
     <ul>
         <li><a href="adm.html">Home</a></li>
-        <li><a  class="active" href="lista-imagen.php">Imagenes</a></li>
-        <li><a  href="lista-video.php">Videos</a></li>
-        <li><a  href="lista-usuario.php">Usuario</a></li>        
+        <li><a  class="active" href="lista-imagen.html">Imagenes</a></li>
+        <li><a  href="lista-video.html">Videos</a></li>
+        <li><a  href="lista-usuario.html">Usuario</a></li>        
         <li style="float:right"><a href="logout.html">Salir</a></li>
       </ul>
 

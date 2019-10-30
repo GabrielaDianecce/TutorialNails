@@ -26,7 +26,7 @@
     var_dump($z);
     
     if($z){
-       
+        header('location:../lista-imagen.php'); 
     }else{
         
     }

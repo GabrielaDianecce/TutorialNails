@@ -20,25 +20,19 @@ class imagenDAO {
 }
 
 
-    public function selectImagen() {
-        $stmt = $this->conecta->prepare("SELECT * FROM $this->imagenes");
+    
+        public function selectImagen($connect) {
+        $stmt = $connect->prepare("SELECT * FROM imagenes");
         $stmt->execute();
-
-        $lista = array();
-
-        while ($linha = $stmt->fetch()) {
-            $imagen = new imagen();
-            $imagen->settitulo($linha['titulo']);
-            $imagen->setsrc($linha['img']);
-            $imagen->setdescripcion($linha['desc']);
-     
-            $lista[] = $imagen;
-        }
-        return $lista;
+        
+        $b = $stmt->fetchAll();
+      
+        return $b;
     }
     
+    
       public function eliminarImagen($imagen) {
-        $stmt = $this->conecta->prepare("DELETE FROM {$this->imagenes} "
+        $stmt = $this->conecta->prepare("DELETE FROM imagenes} "
                 . " WHERE idImagen = :idImagen");
 
         $stmt->bindValue(':idImagen', $imagen->getidImagen());
