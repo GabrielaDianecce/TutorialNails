@@ -18,21 +18,13 @@ class videoDAO {
         }
     }
     
-        public function selectVideo() {
-        $stmt = $this->conecta->prepare("SELECT * FROM $this->videos");
+        public function selectVideo($connect) {
+        $stmt = $connect->prepare("SELECT * FROM videos");
         $stmt->execute();
-
-        $lista = array();
-
-        while ($linha = $stmt->fetch()) {
-            $video = new video();
-            $video->settitulo($linha['t']);
-            $video->setsrc($linha['s']);
-            $video->setdescripcion($linha['d']);
-     
-            $lista[] = $video;
-        }
-        return $lista;
+        
+        $b = $stmt->fetchAll();
+      
+        return $b;
     }
     
       public function eliminarVideo($video) {
