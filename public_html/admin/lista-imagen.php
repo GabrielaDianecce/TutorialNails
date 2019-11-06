@@ -57,10 +57,15 @@ foreach ($retorno as $row) {
     echo "<tr>";
     echo "<td>" . $row['titulo'] . "</td>";
     echo "<td>" . $row['Src'] . "</td>";
+     echo "<td>" . $row['Descripcion'] . "</td>";
 
+
+    
     echo "<td><a href='edita-imagen.php?id=" . $row['idImagen'] . "' ><i class='material-icons'>&#xe22b;</i> </a>
-                      <a onclick='myFunction()'  ><i class='material-icons'>clear</i></a> 
+                     
                     </td>";
+    echo "<td> <a href='eliminar-imagen.php?id=" . $row['idImagen'] . "' ><i class='material-icons'>clear</i></a> </td>";
+      
     echo "</tr>";
 }
 ?>

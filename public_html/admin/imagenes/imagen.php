@@ -2,14 +2,17 @@
 <?php
 
 class imagen {
-    private $idImagen;
-    private $titulo;
-    private $src;
-    private $descripcion;
+    public $idImagen;
+    public $titulo;
+    public $src;
+    public $descripcion;
     
         
         public function getidImagen() {
             return $this->idImagen;
+        }
+          public function setidImagen($idImagen){
+            $this->idImagen = $idImagen;
         }
         public function settitulo($titulo){
             $this->titulo = $titulo;

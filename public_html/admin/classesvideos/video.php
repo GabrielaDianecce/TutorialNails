@@ -2,14 +2,18 @@
 <?php
 
 class video {
-    private $idVideo;
-    private $titulo;
-    private $src;
-    private $descripcion;
+    public $idVideo;
+    public $titulo;
+    public $src;
+    public $descripcion;
     
         
         public function getidVideo() {
             return $this->idVideo;
+        }
+        
+        public function setidVideo($idVideo){
+            $this->idVideo = $idVideo;
         }
         public function settitulo($titulo){
             $this->titulo = $titulo;

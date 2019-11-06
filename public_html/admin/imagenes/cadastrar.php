@@ -2,6 +2,15 @@
     include_once "../../conecta.php";
     include_once "../imagenes/imagen.php";
     include_once "../imagenes/imagenDAO.php";
+    
+    $nombreimg = $_FILES['img']['name'];
+    $nombret = $_FILES['img']['tmp_name'];
+    $d = "../assets/img/" . $nombreimg;
+
+    if (move_uploaded_file($nombret, $d))
+        echo "Imagen enviada";
+    else
+        echo "Error al enviar imagen";
 
 
     $titulo = $_POST['titulo'];
