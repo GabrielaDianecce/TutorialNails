@@ -10,6 +10,9 @@ class usuario {
      public function getidUsuario() {
             return $this->idUsuario;
         }
+        public function setidUsuario($idUsuario){
+            $this->idUsuario = $idUsuario;
+        }
         public function setNombre($Nombre){
             $this->Nombre = $Nombre;
         }

@@ -26,5 +26,53 @@ public function cadastrarUsuario($usuario, $connect){
       
         return $b;
     }
+     public function eliminarUsuario($id, $connect) {
+        $stmt = $connect->prepare("DELETE FROM usuarios  WHERE idUsuario = '$id'");
+
+        $b = $stmt->execute();
+       
+        return $b;
+    }
+
+    public function selectById($id, $connect) {
+
+        var_dump($id);
+        $stmt = $connect->prepare("SELECT * FROM usuarios "
+                . " WHERE idUsuario = :idUsuario");
+
+        $stmt->bindValue(':idUsuario', $id);
+        $stmt->execute();
+
+        $f = $stmt->fetch();
+
+        $usuario = new usuario();
+        $usuario->setidUsuario($f['idUsuario']);
+        $usuario->setNombre($f['Nombre']);
+        $usuario->setEmail($f['Email']);
+        $usuario->setContraseña($f['Contrasena']);
+
+        return $usuario;
+    }
+
+    public function editarUsuario($usuario, $connect) {
+        var_dump($usuario);
+        try {
+            $stmt = $connect->prepare("UPDATE usuarios SET Nombre=?, Email = ?, Contrasena = ? WHERE idUsuario = ?");
+            $stmt->bindValue(1, $usuario->getNombre());
+            $stmt->bindValue(2, $usuario->getEmail());
+            $stmt->bindValue(3, $usuario->getContraseña());
+            $stmt->bindValue(4, $usuario->getidUsuario());
+
+
+            $b = $stmt->execute();
+
+            return $b;
+
+            //var_dump($b);
+        } catch (PDOException $e) {
+            echo "Erro: " . $e;
+        }
+    }
+
 }
   ?>

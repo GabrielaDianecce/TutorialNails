@@ -5,7 +5,7 @@ include_once "usuarios/usuario.php";
 include_once "usuarios/usuariosDAO.php";
 
 $id = $_GET['id'];
-$obj = new ususario();
+$obj = new usuario();
 $objDAO = new usuariosDAO();
 $PDO = new conecta();
 $connect = $PDO->conecta();
@@ -33,14 +33,17 @@ print_r($retorno);
 
 
       <div class="contenido">
-        <form action="lista-usuario.html">
-                   <input type="hidden" name="id" value="<?php echo $retorno->getidImagen(); ?>">
-          <label for="fname">Usuario </label>
-          <input type="text" id="fname" name="nombre" placeholder="Your name..">
+        <form action="edita-usuario-ok.php" method="POST">
+                   <input type="hidden" name="id" value="<?php echo $retorno->getidUsuario(); ?>">
+          <label for="fname">Nombre </label>
+          <input type="text" id="fname" name="nombre" placeholder="Your name.." value="<?php echo $retorno->getNombre(); ?>">
+      
+          <label for="fname">Email </label>
+          <input type="text" id="fname" name="email" placeholder="Your name.." value="<?php echo $retorno->getEmail(); ?>">
       
           <label for="lname">Contraseña</label>
           
-          <input type="password" id="password" name="password" >
+          <input type="password" id="password" name="contrasena" value="<?php echo $retorno->getContraseña(); ?>">
           
        <input type="submit" value="Editar">
         </form>

@@ -52,20 +52,24 @@ $retorno = $u->selectUsuario($connect);
               </td>
           
             </tr>
-           <?php
-                
-                 foreach ($retorno as $row) {
-                    echo "<tr>";
-                    echo "<td>". $row['Nombre']. "</td>";
-                    echo "<td>". $row['Email']. "</td>";
-                    echo "<td>". $row['Contrasena']. "</td>";
-                    echo "<td><a href='edita-usuario.php?id=".$row['idUsuario']."' ><i class='material-icons'>&#xe22b;</i> </a>
-                      <a onclick='myFunction()'  ><i class='material-icons'>clear</i></a> 
-                    </td>";
-                    echo "</tr>";
-                }
+          <?php
+foreach ($retorno as $row) {
+    echo "<tr>";
+    echo "<td>" . $row['Nombre'] . "</td>";
+    echo "<td>" . $row['Email'] . "</td>";
+     echo "<td>" . $row['Contrasena'] . "</td>";
 
-                ?>
+
+    
+    echo "<td><a href='edita-usuario.php?id=" . $row['idUsuario'] . "' ><i class='material-icons'>&#xe22b;</i> </a>
+                     
+                    </td>";
+    echo "<td> <a href='eliminar-usuario.php?id=" . $row['idUsuario'] . "' ><i class='material-icons'>clear</i></a> </td>";
+      
+    echo "</tr>";
+}
+?>
+
           </table>
 
           <a href="add-usuario.html" class="button">Nuevo usuario</a>
